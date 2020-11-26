@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: coral;
+  box-shadow: inset 200px 200px 920px black, inset -100px -100px 100px black;
+}
+.card {
+  /*transform 3d will be  needed after we add transform prop to  java script*/
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 27rem;
+  background-color: rgb(44, 46, 44);
+  box-shadow: 0 20px 20px rgb(0, 0, 0, 0.2), 0px 0px 50px rgb(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+.sneaker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 35vh;
+}
+.sneaker img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 0.4s ease-in-out;
+}
+.circle {
+  width: 12rem;
+  height: 12rem;
+  background: linear-gradient(
+    to right,
+    rgb(245, 70, 66, 0.75),
+    rgb(8, 83, 156, 0.75)
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+.info h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+}
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.size {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.size span {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+.size .active {
+  background-color: white;
+  color: black;
+}
+.purchase {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border: none;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  margin-top: 100px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 20px;
+}
